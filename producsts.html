@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"> <!--- هنا في App locale --->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- custom favicon link -->
+        <link rel="icon" href="./src/assets/images/logo.png" /> <!--- هنا حط asset --->
+        <!-- meta tags -->
+        <title>شركة العطاء البناء التجارية | @yield('title')</title>
+        <meta name="title" content="شركة العطاء البناء التجارية | @yield('title')" />
+        <meta name="description" content="@yield('meta_desc')" />
+        <meta name="keywords" content="Html, Css, JS, Bootstrap, Tailwindcss, PHP, MySQL, Laravel" />
+        <meta name="auther" content="The ArtistWeb" />
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <meta name="robots" content="index, follow">
+        <meta property="og:type" content="@yield('meta_type')">
+        <meta property="og:title" content="@yield('title') | The Artist Web">
+        <meta property="og:description" content="@yield('meta_desc')">
+        <meta property="og:url" content="{{ url()->current() }}">
+        <meta property="og:image" content="./src/assets/images/logo.png"> <!--- هنا حط asset --->
+        <!-- custom google font link --> <!--- هنا في if App Locale --->
+
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" /> -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet" />
+        <!-- custom aos css link -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- custom bootstrap min css link -->
+        <link rel="stylesheet" href="./src/assets/bootstrap/bootstrap.min.css" />
+        <!-- custom tailwindcss link -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- custom css link -->
+        <link rel="stylesheet" href="./src/assets/css/styles.css" />
+        <link rel="stylesheet" href="./src/assets/css/components.css" />
+        <link rel="stylesheet" href="./src/assets/css/responsive.css" />
+    </head>
+
+    <body
+        lang="ar"
+        id="up"
+    >
+        <!-- HEADER -->
+        <header class="absolute top-0 left-0 right-0 z-[30] !w-[100%]">
+            <!-- Header Up -->
+            <div class="!bg-[var(--blue-dark-color)] !min-h-[50px] !max-h-[50px] flex items-center">
+                <div class="container">
+                    <div class="flex items-center justify-center md:justify-between gap-[16px]">
+                        <ul class="flex items-center gap-[8px]">
+                            <!-- <li>
+                                <a 
+                                    href="#"
+                                    target="_blank" 
+                                    class="box orange"
+                                >
+                                    AR
+                                </a>
+                            </li> -->
+
+                            <li>
+                                <a 
+                                    href="#"
+                                    target="_blank" 
+                                    class="box orange"
+                                >
+                                    EN
+                                </a>
+                            </li>
+
+                            <li>
+                                <a 
+                                    href="#"
+                                    target="_blank" 
+                                    class="box"
+                                >
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" /></svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a 
+                                    href="#"
+                                    target="_blank" 
+                                    class="box"
+                                >
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a 
+                                    href="#"
+                                    target="_blank" 
+                                    class="box"
+                                >
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="hidden md:flex items-center gap-[12px]">
+                            <li>
+                                <a 
+                                    href="mailto:"
+                                    class="!text-[15px] !font-[500] !text-[var(--bg-color)] flex items-center gap-[8px] hover:opacity-[0.7] transition-all duration-[0.4s]"
+                                >
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-phone"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 3a1 1 0 0 1 .877 .519l.051 .11l2 5a1 1 0 0 1 -.313 1.16l-.1 .068l-1.674 1.004l.063 .103a10 10 0 0 0 3.132 3.132l.102 .062l1.005 -1.672a1 1 0 0 1 1.113 -.453l.115 .039l5 2a1 1 0 0 1 .622 .807l.007 .121v4c0 1.657 -1.343 3 -3.06 2.998c-8.579 -.521 -15.418 -7.36 -15.94 -15.998a3 3 0 0 1 2.824 -2.995l.176 -.005h4z" /></svg>
+                                    01550799286
+                                </a>
+                            </li>
+
+                            <li class="!w-[2px] !min-h-[20px] !max-h-[20px] !bg-[var(--blue-color)] !rounded-[1000px]"></li>
+
+                            <li>
+                                <a 
+                                    href="tel:"
+                                    class="!text-[15px] !font-[500] !text-[var(--bg-color)] flex items-center gap-[8px] hover:opacity-[0.7] transition-all duration-[0.4s]"
+                                >
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" /><path d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" /></svg>
+                                    username@gmail.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header Down -->
+            <div class="relative top-0 left-0 right-0 z-[30] !w-[100%] !bg-[var(--bg-color)] !min-h-[80px] !max-h-[80px] overflow-hidden border-b-2 border-solid border-[transparent]" data-header>
+                <div class="container">
+                    <div class="flex items-center justify-between gap-[16px] !min-h-[80px] !max-h-[80px]">
+                        <a
+                            href="./index.html"  
+                            class="logo"
+                        >
+                            <img
+                                src="./src/assets/images/logo.png"
+                                alt="site name"
+                                loading="lazy"
+                                class="img-logo img-cover"
+                            />
+                        </a>
+
+                        <div class="flex items-center gap-[16px]">
+                            <ul class="hidden lg:flex items-center">
+                                <li>
+                                    <a 
+                                        href="#" 
+                                        class="flex items-center justify-center hover:!text-[var(--orange-color)] !rounded-[4px] !min-h-[30px] !max-h-[30px] !text-[14px] !font-[500] !px-[16px] transition-all duration-[0.4s]"
+                                    >
+                                        <p class="p">الرئيسية</p>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a 
+                                        href="#" 
+                                        class="flex items-center justify-center !rounded-[4px] !min-h-[30px] !max-h-[30px] !text-[14px] !font-[500] !px-[16px] !bg-[var(--orange-color)] transition-all duration-[0.4s]"
+                                    >
+                                        <p class="p">منتجاتنا</p>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a 
+                                        href="#" 
+                                        class="flex items-center justify-center !rounded-[4px] !min-h-[30px] !max-h-[30px] !text-[14px] !font-[500] !px-[16px] hover:!text-[var(--orange-color)] transition-all duration-[0.4s]"
+                                    >
+                                        <p class="p">مشاريعنا</p>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a 
+                                        href="#" 
+                                        class="flex items-center justify-center !rounded-[4px] !min-h-[30px] !max-h-[30px] !text-[14px] !font-[500] !px-[16px] hover:!text-[var(--orange-color)] transition-all duration-[0.4s]"
+                                    >
+                                        <p class="p">كتالوج</p>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a 
+                                        href="#" 
+                                        class="flex items-center justify-center !rounded-[4px] !min-h-[30px] !max-h-[30px] !text-[14px] !font-[500] !px-[16px] hover:!text-[var(--orange-color)] transition-all duration-[0.4s]"
+                                    >
+                                        <p class="p">معرض الصور</p>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a 
+                                        href="#" 
+                                        class="flex items-center justify-center !rounded-[4px] !min-h-[30px] !max-h-[30px] !text-[14px] !font-[500] !px-[16px] hover:!text-[var(--orange-color)] transition-all duration-[0.4s]"
+                                    >
+                                        <p class="p">الاخبار</p>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a 
+                                        href="#" 
+                                        class="flex items-center justify-center !rounded-[4px] !min-h-[30px] !max-h-[30px] !text-[14px] !font-[500] !px-[16px] hover:!text-[var(--orange-color)] transition-all duration-[0.4s]"
+                                    >
+                                        <p class="p">من نحن</p>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a 
+                                        href="#" 
+                                        class="flex items-center justify-center !rounded-[4px] !min-h-[30px] !max-h-[30px] !text-[14px] !font-[500] !px-[16px] hover:!text-[var(--orange-color)] transition-all duration-[0.4s]"
+                                    >
+                                        <p class="p">تواصل معنا</p>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="flex items-center gap-[10px]">
+                                <button
+                                    type="button"
+                                    class="box blue"
+                                    data-open-search
+                                >
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="box blue lg:!hidden"
+                                    data-bs-toggle="offcanvas"
+                                    data-bs-target="#aside"
+                                >
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Search Header -->
+                    <form action="#" method="GET" class="absolute top-[80px] left-0 right-0 z-[30] !px-[16px] !w-[100%] !max-w-[1200px] !mx-auto flex items-center gap-[10px] !min-h-[80px] !max-h-[80px] !bg-[var(--bg-color)] transition-all duration-[0.4s]" data-div-search>
+                        <!-- @csrf -->
+                        
+                        <div class="form-box">
+                            <input
+                                type="text"
+                                placeholder="ابحث هنا..."
+                                name="search"
+                                value=""
+                                class="form-control !p-0"
+                                style="background-color: transparent !important; border: none !important;"
+                                data-input-search
+                            />
+                        </div>
+
+                        <div class="flex items-center gap-[8px]">
+                            <button
+                                type="button"
+                                class="box blue !rounded-[1000px]"
+                            >
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                            </button>
+
+                            <button
+                                type="button"
+                                class="box orange !rounded-[1000px]"
+                                data-close-search
+                            >
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <!-- ASIDE -->
+        <aside class="offcanvas offcanvas-top" id="aside">
+            <ul class="flex flex-col">
+                <li>
+                    <a 
+                        href="#" 
+                        class="aside-item"
+                    >
+                        <p class="p">الرئيسية</p>
+                    </a>
+                </li>
+
+                <li class="separator blue-dark"></li>
+                
+                <li>
+                    <a 
+                        href="#" 
+                        class="aside-item active"
+                    >
+                        <p class="p">منتجاتنا</p>
+                    </a>
+                </li>
+
+                <li class="separator blue-dark"></li>
+                
+                <li>
+                    <a 
+                        href="#" 
+                        class="aside-item"
+                    >
+                        <p class="p">مشاريعنا</p>
+                    </a>
+                </li>
+
+                <li class="separator blue-dark"></li>
+                
+                <li>
+                    <a 
+                        href="#" 
+                        class="aside-item"
+                    >
+                        <p class="p">كتالوج</p>
+                    </a>
+                </li>
+
+                <li class="separator blue-dark"></li>
+                
+                <li>
+                    <a 
+                        href="#" 
+                        class="aside-item"
+                    >
+                        <p class="p">معرض الصور</p>
+                    </a>
+                </li>
+
+                <li class="separator blue-dark"></li>
+                
+                <li>
+                    <a 
+                        href="#" 
+                        class="aside-item"
+                    >
+                        <p class="p">الاخبار</p>
+                    </a>
+                </li>
+
+                <li class="separator blue-dark"></li>
+                
+                <li>
+                    <a 
+                        href="#" 
+                        class="aside-item"
+                    >
+                        <p class="p">من نحن</p>
+                    </a>
+                </li>
+
+                <li class="separator blue-dark"></li>
+                
+                <li>
+                    <a 
+                        href="#" 
+                        class="aside-item"
+                    >
+                        <p class="p">تواصل معنا</p>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="main">
+            <article>
+                <!-- Banner -->
+                <section class="section !text-[var(--bg-color)] !bg-[url(./src/assets/images/bg-back.png)] !bg-cover !bg-center">
+                    <div class="container">
+                        <div class="flex flex-col items-center justify-center text-center gap-[16px]">
+                            <h4 class="h4">منتجاتنا</h4>
+
+                            <div class="flex flex-wrap items-center gap-[12px]">
+                                <a 
+                                    href="#"
+                                    class="p !flex items-center gap-[8px] !text-[var(--bg-color)] hover:opacity-[0.7] transition-all duration-p0.4s"
+                                >
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-home"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
+                                    الرئيسية
+                                </a>
+
+                                <div class="muted">
+                                    <p class="p">/</p>
+                                </div>
+
+                                <p class="p">منتجاتنا</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="container">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
+                            <a 
+                                href="#"
+                                class="card-primary"
+                            >
+                                <img
+                                    src="https://eg-crete.com/storage/344/W5WfWx9jMpAPkSUSbTvrmi8UEeCsaIhsDSOG7ihB.jpeg"
+                                    alt=""
+                                    loading="lazy"
+                                    class="!mx-auto min-w-[max-content] max-w-[130px] max-h-[130px] img-cover"
+                                />
+
+                                <div class="flex flex-col items-center justify-center text-center gap-[14px] !p-[16px]">
+                                    <p class="p">(بردوره متوسطه (متر</p>
+
+                                    <ul class="flex items-center justify-center gap-[10px]">
+                                        <li>
+                                            <img
+                                                src="https://eg-crete.com/storage/509/73-small.webp"
+                                                alt=""
+                                                loading="lazy"
+                                                class="!min-w-[30px] !max-w-[30px] !min-h-[30px] !max-h-[30px] img-cover"
+                                            />
+                                        </li>
+                                        
+                                        <li>
+                                            <img
+                                                src="https://eg-crete.com/storage/509/73-small.webp"
+                                                alt=""
+                                                loading="lazy"
+                                                class="!min-w-[30px] !max-w-[30px] !min-h-[30px] !max-h-[30px] img-cover"
+                                            />
+                                        </li>
+                                        
+                                        <li>
+                                            <img
+                                                src="https://eg-crete.com/storage/509/73-small.webp"
+                                                alt=""
+                                                loading="lazy"
+                                                class="!min-w-[30px] !max-w-[30px] !min-h-[30px] !max-h-[30px] img-cover"
+                                            />
+                                        </li>
+                                        
+                                        <li>
+                                            <img
+                                                src="https://eg-crete.com/storage/509/73-small.webp"
+                                                alt=""
+                                                loading="lazy"
+                                                class="!min-w-[30px] !max-w-[30px] !min-h-[30px] !max-h-[30px] img-cover"
+                                            />
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+
+                            <a 
+                                href="#"
+                                class="card-primary"
+                            >
+                                <img
+                                    src="https://eg-crete.com/storage/342/5uD72zILxzlDuOoWb3LjaXdcsMll8WCiD83ZifqQ.jpeg"
+                                    alt=""
+                                    loading="lazy"
+                                    class="!mx-auto min-w-[max-content] max-w-[130px] max-h-[130px] img-cover"
+                                />
+
+                                <div class="flex flex-col items-center justify-center text-center gap-[14px] !p-[16px]">
+                                    <p class="p">(بردوره متوسطه (متر</p>
+
+                                    <ul class="flex items-center justify-center gap-[10px]">
+                                        <li>
+                                            <img
+                                                src="https://eg-crete.com/storage/509/73-small.webp"
+                                                alt=""
+                                                loading="lazy"
+                                                class="!min-w-[30px] !max-w-[30px] !min-h-[30px] !max-h-[30px] img-cover"
+                                            />
+                                        </li>
+                                        
+                                        <li>
+                                            <img
+                                                src="https://eg-crete.com/storage/509/73-small.webp"
+                                                alt=""
+                                                loading="lazy"
+                                                class="!min-w-[30px] !max-w-[30px] !min-h-[30px] !max-h-[30px] img-cover"
+                                            />
+                                        </li>
+                                        
+                                        <li>
+                                            <img
+                                                src="https://eg-crete.com/storage/509/73-small.webp"
+                                                alt=""
+                                                loading="lazy"
+                                                class="!min-w-[30px] !max-w-[30px] !min-h-[30px] !max-h-[30px] img-cover"
+                                            />
+                                        </li>
+                                        
+                                        <li>
+                                            <img
+                                                src="https://eg-crete.com/storage/509/73-small.webp"
+                                                alt=""
+                                                loading="lazy"
+                                                class="!min-w-[30px] !max-w-[30px] !min-h-[30px] !max-h-[30px] img-cover"
+                                            />
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+
+                            <a 
+                                href="#"
+                                class="card-primary"
+                            >
+                                <img
+                                    src="https://eg-crete.com/storage/343/2WTENqeHoGjdZlyoeuuW6gMJtcgLHvmPVi1ub5wi.jpeg"
+                                    alt=""
+                                    loading="lazy"
+                                    class="!mx-auto min-w-[max-content] max-w-[130px] max-h-[130px] img-cover"
+                                />
+
+                                <div class="flex flex-col items-center justify-center text-center gap-[14px] !p-[16px]">
+                                    <p class="p">(بردوره متوسطه (متر</p>
+
+                                    <ul class="flex items-center justify-center gap-[10px]">
+                                        <li>
+                                            <img
+                                                src="https://eg-crete.com/storage/509/73-small.webp"
+                                                alt=""
+                                                loading="lazy"
+                                                class="!min-w-[30px] !max-w-[30px] !min-h-[30px] !max-h-[30px] img-cover"
+                                            />
+                                        </li>
+                                        
+                                        <li>
+                                            <img
+                                                src="https://eg-crete.com/storage/509/73-small.webp"
+                                                alt=""
+                                                loading="lazy"
+                                                class="!min-w-[30px] !max-w-[30px] !min-h-[30px] !max-h-[30px] img-cover"
+                                            />
+                                        </li>
+                                        
+                                        <li>
+                                            <img
+                                                src="https://eg-crete.com/storage/509/73-small.webp"
+                                                alt=""
+                                                loading="lazy"
+                                                class="!min-w-[30px] !max-w-[30px] !min-h-[30px] !max-h-[30px] img-cover"
+                                            />
+                                        </li>
+                                        
+                                        <li>
+                                            <img
+                                                src="https://eg-crete.com/storage/509/73-small.webp"
+                                                alt=""
+                                                loading="lazy"
+                                                class="!min-w-[30px] !max-w-[30px] !min-h-[30px] !max-h-[30px] img-cover"
+                                            />
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+
+                            <a 
+                                href="#"
+                                class="card-primary"
+                            >
+                                <img
+                                    src="https://eg-crete.com/storage/346/ZnZDvZYqQtdJgsDtreIhtMiQU24pDbnokiMxUR8t.jpeg"
+                                    alt=""
+                                    loading="lazy"
+                                    class="!mx-auto min-w-[max-content] max-w-[130px] max-h-[130px] img-cover"
+                                />
+
+                                <div class="flex flex-col items-center justify-center text-center gap-[14px] !p-[16px]">
+                                    <p class="p">(بردوره متوسطه (متر</p>
+
+                                    <ul class="flex items-center justify-center gap-[10px]">
+                                        <li>
+                                            <img
+                                                src="https://eg-crete.com/storage/509/73-small.webp"
+                                                alt=""
+                                                loading="lazy"
+                                                class="!min-w-[30px] !max-w-[30px] !min-h-[30px] !max-h-[30px] img-cover"
+                                            />
+                                        </li>
+                                        
+                                        <li>
+                                            <img
+                                                src="https://eg-crete.com/storage/509/73-small.webp"
+                                                alt=""
+                                                loading="lazy"
+                                                class="!min-w-[30px] !max-w-[30px] !min-h-[30px] !max-h-[30px] img-cover"
+                                            />
+                                        </li>
+                                        
+                                        <li>
+                                            <img
+                                                src="https://eg-crete.com/storage/509/73-small.webp"
+                                                alt=""
+                                                loading="lazy"
+                                                class="!min-w-[30px] !max-w-[30px] !min-h-[30px] !max-h-[30px] img-cover"
+                                            />
+                                        </li>
+                                        
+                                        <li>
+                                            <img
+                                                src="https://eg-crete.com/storage/509/73-small.webp"
+                                                alt=""
+                                                loading="lazy"
+                                                class="!min-w-[30px] !max-w-[30px] !min-h-[30px] !max-h-[30px] img-cover"
+                                            />
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+
+                        <ul class="pagination">
+                            <li>
+                                <a 
+                                    href="#" 
+                                    class="arrow-dir paginate-link paginate-btn"
+                                >
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a 
+                                    href="#" 
+                                    class="paginate-link active"
+                                >
+                                    1
+                                </a>
+                            </li>
+
+                            <li>
+                                <a 
+                                    href="#" 
+                                    class="paginate-link"
+                                >
+                                    2
+                                </a>
+                            </li>
+
+                            <li>
+                                <a 
+                                    href="#" 
+                                    class="paginate-link"
+                                >
+                                    3
+                                </a>
+                            </li>
+
+                            <li>
+                                <a 
+                                    href="#" 
+                                    class="arrow-dir paginate-link paginate-btn"
+                                >
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+        </main>
+
+        <!-- Footer -->
+        <footer class="!py-[50px] !text-[var(--bg-color)] !bg-[url(./src/assets/images/bg-back.png)] !bg-cover !bg-center">
+            <div class="container">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[36px] !mb-[35px]">
+                    <div class="flex flex-col gap-[16px]">
+                        <div class="flex items-center gap-[12px]">
+                            <div class="box blue-fixed">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-exclamation-mark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 19v.01" /><path d="M12 15v-10" /></svg>
+                            </div>
+
+                            <p class="p">من نحن</p>
+                        </div>
+
+                        <p class="p">مملوكة لمجموعة كابريول وهي مجموعة دولية من الشركات العاملة في قطاعات مختلفة مثل تطوير العقارات والبناء والتعليم وتصنيع المنتجات الأسمنتية والمزيد.</p>
+                    </div>
+
+                    <div class="flex flex-col gap-[16px]">
+                        <div class="flex items-center gap-[12px]">
+                            <div class="box blue-fixed">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
+                            </div>
+
+                            <p class="p">روابط سريعه</p>
+                        </div>
+
+                        <ul class="flex flex-col gap-[10px]">
+                            <li>
+                                <a 
+                                    href="#" 
+                                    class="flex items-center gap-[10px] !text-[var(--bg-color)] hover:!text-[var(--orange-color)] transition-all duration-[0.4s]"
+                                >
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
+                                    مشاريعنا
+                                </a>
+                            </li>
+
+                            <li>
+                                <a 
+                                    href="#" 
+                                    class="flex items-center gap-[10px] !text-[var(--bg-color)] hover:!text-[var(--orange-color)] transition-all duration-[0.4s]"
+                                >
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
+                                    منتجاتنا
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a 
+                                    href="#" 
+                                    class="flex items-center gap-[10px] !text-[var(--bg-color)] hover:!text-[var(--orange-color)] transition-all duration-[0.4s]"
+                                >
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
+                                    الاخبار
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a 
+                                    href="#" 
+                                    class="flex items-center gap-[10px] !text-[var(--bg-color)] hover:!text-[var(--orange-color)] transition-all duration-[0.4s]"
+                                >
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
+                                    من نحن
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                            
+                    <ul class="flex flex-col gap-[10px] lg:!mt-[56px]">
+                        <li>
+                            <a 
+                                href="#" 
+                                class="flex items-center gap-[10px] !text-[var(--bg-color)] hover:!text-[var(--orange-color)] transition-all duration-[0.4s]"
+                            >
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
+                                كتالوج
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a 
+                                href="#" 
+                                class="flex items-center gap-[10px] !text-[var(--bg-color)] hover:!text-[var(--orange-color)] transition-all duration-[0.4s]"
+                            >
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
+                                معرض الصور
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a 
+                                href="#" 
+                                class="flex items-center gap-[10px] !text-[var(--bg-color)] hover:!text-[var(--orange-color)] transition-all duration-[0.4s]"
+                            >
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
+                                تواصل معنا
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex items-center justify-center">
+                    <p class="p">جميع الحقوق محفوظة لشركة العطاء البناء التجارية</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- btn back to up -->
+        <a 
+            href="#up" 
+            class="box blue fixed ltr:right-[20px] rtl:left-[20px] bottom-[20px] opacity-0 transition-all duration-[0.4s]"
+            data-btn-back-to-up
+        >
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-up"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 15l6 -6l6 6" /></svg>
+        </a>
+        
+        <!-- custom bootstrap bundle min js link -->
+        <script src="./src/assets/bootstrap/bootstrap.bundle.min.js"></script>
+        <!-- custom js link -->
+        <script src="./src/scripts.js"></script>
+        <!-- custom aos js link -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,
+                once: true,
+                offset: 200
+            });
+        </script>
+    </body>
+</html>

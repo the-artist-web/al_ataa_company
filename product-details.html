@@ -149,7 +149,7 @@
                                 <li>
                                     <a 
                                         href="#" 
-                                        class="flex items-center justify-center !bg-[var(--orange-color)] !rounded-[4px] !min-h-[30px] !max-h-[30px] !text-[14px] !font-[500] !px-[16px] transition-all duration-[0.4s]"
+                                        class="flex items-center justify-center hover:!text-[var(--orange-color)] !rounded-[4px] !min-h-[30px] !max-h-[30px] !text-[14px] !font-[500] !px-[16px] transition-all duration-[0.4s]"
                                     >
                                         <p class="p">الرئيسية</p>
                                     </a>
@@ -283,7 +283,7 @@
                 <li>
                     <a 
                         href="#" 
-                        class="aside-item active"
+                        class="aside-item"
                     >
                         <p class="p">الرئيسية</p>
                     </a>
@@ -368,112 +368,255 @@
             </ul>
         </aside>
 
-        <!-- VIDEO -->
-         <div class="modal fade" id="video_modal">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="ratio ratio-16x9">
-                        <iframe
-                            src="https://www.youtube.com/embed/0jvhMXni-DU"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <main class="main">
             <article>
-                <!-- Hero -->
-                <div class="relative !bg-[var(--fourd-bg-color)] !h-[calc(100vh-130px)] !bg-[url(https://cdn.arabsstock.com/uploads/images/210962/use-of-modern-machinery-in-thumbnail-210962.webp)] !bg-cover !bg-center">
-                    <div class="!bg-[rgba(0,0,0,0.6)] !h-[100%]">
-                        <div class="container !h-[100%]">
-                            <div class="flex items-center justify-center !h-[100%]">
-                                <div class="flex flex-col items-center justify-center gap-[30px] text-center !h-[100%] !text-[var(--bg-color)] !max-w-[760px] !mx-auto">
-                                    <h1 class="h1 !text-[25px] sm:!text-[30px] md:!text-[52px]">شركة العطاء البناء التجارية</h1>
+                <!-- Banner -->
+                <section class="section !text-[var(--bg-color)] !bg-[url(./src/assets/images/bg-back.png)] !bg-cover !bg-center">
+                    <div class="container">
+                        <div class="flex flex-col items-center justify-center text-center gap-[16px]">
+                            <h4 class="h4">انترلوك سداسي</h4>
+
+                            <div class="flex flex-wrap items-center gap-[12px]">
+                                <a 
+                                    href="#"
+                                    class="p !flex items-center gap-[8px] !text-[var(--bg-color)] hover:opacity-[0.7] transition-all duration-p0.4s"
+                                >
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-home"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
+                                    الرئيسية
+                                </a>
+
+                                <div class="muted">
+                                    <p class="p">/</p>
+                                </div>
+
+                                <p class="p">منتجاتنا</p>
+
+                                <div class="muted">
+                                    <p class="p">/</p>
+                                </div>
+
+                                <p class="p">انترلوك سداسي</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="container">
+                        <div class="grid grid-cols-1 lg:grid-cols-[1fr_350px] gap-[50px]">
+                            <div class="flex flex-col gap-[50px]">
+                                <div class="flex flex-col gap-[16px]">
+                                    <p class="p !font-[600] !text-[var(--blue-color)]">انترلوك سداسي</p>
     
-                                    <h2 class="h2 !text-[18px] md:!text-[28px]">شركة العطاء البناء التجارية - رائدة صناعة المُنتجات الإسمنتية في الشرق الأوسط</h2>
+                                    <div id="slide_product" class="carousel slide">
+                                        <div class="flex items-center gap-[16px]">
+                                            <div class="carousel-indicators !m-0 !p-0 !relative !flex flex-col items-center gap-[16px]">
+                                                <button 
+                                                    type="button" 
+                                                    data-bs-target="#slide_product" 
+                                                    data-bs-slide-to="0" 
+                                                    class="active"
+                                                >
+                                                    <img
+                                                        src="https://eg-crete.com/storage/451/61-small.webp"
+                                                        alt=""
+                                                        loading="lazy"
+                                                        class="!min-w-[36px] !max-w-[36px] !min-h-[36px] !max-h-[36px] img-cover"
+                                                    />
+                                                </button>
+
+                                                <button 
+                                                    type="button" 
+                                                    data-bs-target="#slide_product" 
+                                                    data-bs-slide-to="1"
+                                                >
+                                                    <img
+                                                        src="https://eg-crete.com/storage/453/16-small.webp"
+                                                        alt=""
+                                                        loading="lazy"
+                                                        class="!min-w-[36px] !max-w-[36px] !min-h-[36px] !max-h-[36px] img-cover"
+                                                    />
+                                                </button>
+
+                                                <button 
+                                                    type="button" 
+                                                    data-bs-target="#slide_product" 
+                                                    data-bs-slide-to="2"
+                                                >
+                                                    <img
+                                                        src="https://eg-crete.com/storage/455/59-small.webp"
+                                                        alt=""
+                                                        loading="lazy"
+                                                        class="!min-w-[36px] !max-w-[36px] !min-h-[36px] !max-h-[36px] img-cover"
+                                                    />
+                                                </button>
+
+                                                <button 
+                                                    type="button" 
+                                                    data-bs-target="#slide_product" 
+                                                    data-bs-slide-to="3"
+                                                >
+                                                    <img
+                                                        src="https://eg-crete.com/storage/457/15-small.webp"
+                                                        alt=""
+                                                        loading="lazy"
+                                                        class="!min-w-[36px] !max-w-[36px] !min-h-[36px] !max-h-[36px] img-cover"
+                                                    />
+                                                </button>
+                                            </div>
+
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img
+                                                        src="https://eg-crete.com/storage/451/61-small.webp"
+                                                        alt=""
+                                                        loading="lazy"
+                                                        class="!max-w-[490px] !max-h-[490px] !mx-auto img-cover"
+                                                    />
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img
+                                                        src="https://eg-crete.com/storage/453/16-small.webp"
+                                                        alt=""
+                                                        loading="lazy"
+                                                        class="!max-w-[490px] !max-h-[490px] !mx-auto img-cover"
+                                                    />
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img
+                                                        src="https://eg-crete.com/storage/455/59-small.webp"
+                                                        alt=""
+                                                        loading="lazy"
+                                                        class="!max-w-[490px] !max-h-[490px] !mx-auto img-cover"
+                                                    />
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img
+                                                        src="https://eg-crete.com/storage/457/15-small.webp"
+                                                        alt=""
+                                                        loading="lazy"
+                                                        class="!max-w-[490px] !max-h-[490px] !mx-auto img-cover"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-[35px]">
+                                    <p class="p">
+                                        نستخدم احدث الماكينات الاوتوماتيكية الالمانية و التى تتميز بمعدل انتاج و جودة عالية يتم خلط المواد الخام ميكانيكياً الرمل النظيف – سن دلوميت أكاسيد - إضافات - أسمنت بورتلاند يتم صبها و كبسها هيدروليكيا باستخدام هزازات ميكانيكية وذلك للحصول على رصف وقوة و متانة عالية.<br /><br />
+
+                                        البلاط مزود بشنفرة و فواصل على محيط البلاط لاعطاء قوة و تماسك اكبر عند الرصف.<br /><br />
+
+                                        يتم استخدام الوان خاصة فى التصنيع طبقاً لرغبة العميل.
+                                    </p>
+
+                                    <div class="overflow-x-auto scrollbar-none !mx-[-16px] !px-[16px] !w-[100%]">
+                                        <table class="border-collapse !w-[100%] border-2 border-solid border-[var(--border-color)] !text-[var(--text-color)] !font-[500] !text-[15px] !text-nowrap">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="border-2 border-solid border-[var(--border-color)] !py-[10px] !px-[15px]">القياس (سم)</td>
+                                                    <td class="border-2 border-solid border-[var(--border-color)] !py-[10px] !px-[15px]">23*20</td>
+                                                </tr>
     
-                                    <a href="#" class="btn btn-blue !mt-[20px]">
-                                        التفاصيل
+                                                <tr>
+                                                    <td class="border-2 border-solid border-[var(--border-color)] !py-[10px] !px-[15px]">سمك الوحدة (سم)</td>
+                                                    <td class="border-2 border-solid border-[var(--border-color)] !py-[10px] !px-[15px]">6 - 8</td>
+                                                </tr>
+    
+                                                <tr>
+                                                    <td class="border-2 border-solid border-[var(--border-color)] !py-[10px] !px-[15px]">الوزن كجم / م2</td>
+                                                    <td class="border-2 border-solid border-[var(--border-color)] !py-[10px] !px-[15px]">135 - 175</td>
+                                                </tr>
+    
+                                                <tr>
+                                                    <td class="border-2 border-solid border-[var(--border-color)] !py-[10px] !px-[15px]">عدد الوحدات / م2</td>
+                                                    <td class="border-2 border-solid border-[var(--border-color)] !py-[10px] !px-[15px]">( 28 + (1/2 x 2) )29</td>
+                                                </tr>
+    
+                                                <tr>
+                                                    <td class="border-2 border-solid border-[var(--border-color)] !py-[10px] !px-[15px]">الاجهاد (نيوتن)</td>
+                                                    <td class="border-2 border-solid border-[var(--border-color)] !py-[10px] !px-[15px]">55 - 25</td>
+                                                </tr>
+    
+                                                <tr>
+                                                    <td class="border-2 border-solid border-[var(--border-color)] !py-[10px] !px-[15px]">متوسط الامتصاص بعد 24 ساعة</td>
+                                                    <td class="border-2 border-solid border-[var(--border-color)] !py-[10px] !px-[15px]">6%</td>
+                                                </tr>
+    
+                                                <tr>
+                                                    <td class="border-2 border-solid border-[var(--border-color)] !py-[10px] !px-[15px]">مساحة القطعة (سم2)</td>
+                                                    <td class="border-2 border-solid border-[var(--border-color)] !py-[10px] !px-[15px]">346</td>
+                                                </tr>
+    
+                                                <tr>
+                                                    <td class="border-2 border-solid border-[var(--border-color)] !py-[10px] !px-[15px]">المواصفات القياسية</td>
+                                                    <td class="border-2 border-solid border-[var(--border-color)] !py-[10px] !px-[15px]">(ASTM C 936) (BS 6717 - 1993)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <form action="" method="POST" class="lg:sticky top-[90px] flex flex-col gap-[20px] !max-h-[max-content]">
+                                <p class="p !font-[600] !text-[var(--blue-color)]">مهتم ! اسال عن هذا المنتج الان</p>
+
+                                <div class="flex flex-col gap-[16px]">
+                                    <div class="form-box">
+                                        <label for="full_name" class="form-label">الاسم بالكامل</label>
+
+                                        <input
+                                            type="text"
+                                            name="full_name"
+                                            value=""
+                                            class="form-control"
+                                        />
+
+                                        <p class="messages"></p>
+                                    </div>
+
+                                    <div class="form-box">
+                                        <label for="email" class="form-label">البريد الالكتروني</label>
+
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            value=""
+                                            class="form-control"
+                                        />
+
+                                        <p class="messages"></p>
+                                    </div>
+
+                                    <div class="form-box">
+                                        <label for="number" class="form-label">رقم الهاتف</label>
+
+                                        <input
+                                            type="number"
+                                            name="number"
+                                            value=""
+                                            class="form-control"
+                                        />
+
+                                        <p class="messages"></p>
+                                    </div>
+
+                                    <button 
+                                        type="submit"
+                                        class="btn btn-blue" 
+                                    >
+                                        اطلب الأن
                                         <span class="arrow-dir">
                                             <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
                                         </span>
-                                    </a>
+                                    </button>
                                 </div>
-                            </div>
-    
-                            <span class="absolute left-[50%] bottom-[12px] -translate-x-[50%]">
-                                <a href="#section-two" class="!w-[50px] !h-[50px] !rounded-[4px] flex items-center justify-center !text-[var(--bg-color)] !bg-[#ffffff30] hover:!bg-[#ffffff60] animate-bounce transition-all duration-[0.4s]">
-                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="25"  height="25"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- About Us -->
-                <section class="section" id="section-two">
-                    <div class="container">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-[50px]">
-                            <div class="flex flex-col gap-[20px]" data-aos="fade-up">
-                                <div class="flex items-start gap-[30px]">
-                                    <div class="flex items-start gap-[8px]">
-                                        <p class="p !text-[var(--orange-color)]" style="writing-mode: vertical-lr;">من نحن</p>
-
-                                        <div class="!w-[5px] !h-[50px] border-x-2 border-solid border-[var(--orange-color)]"></div>
-                                    </div>
-
-                                    <h1 class="h1 !text-[var(--blue-dark-color)]">هكذا بدأت قصتنا</h1>
-                                </div>
-
-                                <p class="p !text-[var(--second-color)]">
-                                    "شبكة الطرق هي شريان الحياة لوطننا الحبيب, والمساهمة في بنائها هي مهمتنا الأسمى"<br /><br />
-
-                                    جملة بدأ بها - رئيس مجلس أدارة شركة EGY-Crete المهندس محمد مفيد<br /><br />
-
-                                    حديثه خلال مؤتمر إعلان الشركة صب تركيزها على الإسهام في ثورة إنشاء أكبر شبكة طرق في تاريخ مصر بعد أن أسهمت الشركة لعشرات السنين في بناء معمار دبي وأبو ظبي على وجه الخصوص والإمارات العربية المتحدة على وجه العموم.<br /><br />
-
-                                    ثورةٌ فجرها الرئيس عبد الفتاح السيسي، وسار على نهجه من كان نهوض الأمةِ شغله الشاغل.<br /><br />
-
-                                    ومن هذه اللحظة وفي الشهر الأول من العام 2017 انطلقت شركة EGY-Crete في مصر<br /><br />
-
-                                    كشركة تابعة لمجموعة Capriole العالمية.<br /><br />
-
-                                    وفي خلال 3 سنوات فقط، افتتحت الشركة 3 مصانع عملاقة تحتوي على 5 خطوط انتاج للعديد من المنتجات الأسمنتية، وعلى رأسها المكونات الرئيسية لطريق المستقبل، والتي تتمثل في الانترلوك والبردورة والطوب الأسمنتي، بطاقة انتاجية 12 ملاين سنويا، وبأعلى تكنولوجيا ألمانية قادرة على تصنيع منتجات اسمنتية يصل جهدها إلى 550 كيلوجرام، لتكون بذلك الشركة أحد أهم أعمدة بناء مشروعات مصر القومية وعلى رأسها العاصمة الإدارية الجديدة والتي تعد نواة انطلاقة مصر إلى المستقبل.<br /><br />
-                                </p>
-
-                                <a 
-                                    href="#" 
-                                    class="btn btn-main"
-                                >
-                                    اقرأ المزيد
-                                    <span class="arrow-dir">
-                                        <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
-                                    </span>
-                                </a>
-                            </div>
-
-                            <div class="relative !max-h-[max-content]" data-aos="fade-up">
-                                <img 
-                                    src="https://eg-crete.com/storage/201/OQiCwvK05XkTu7iqs97rTRhvkjrDYmNuS7BQX9er.jpeg" 
-                                    alt="img name" 
-                                    loading="lazy"
-                                    class="!max-h-[max-content] img-cover"
-                                />
-
-                                <button 
-                                    type="button" 
-                                    class="box blue btn-play absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] !rounded-[1000px] !min-w-[120px] !max-w-[120px] !min-h-[120px] !max-h-[120px]"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#video_modal"
-                                >
-                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="80"  height="80"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" /></svg>
-                                </button>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </section>
@@ -732,571 +875,6 @@
                             >
                                 <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
                             </button>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Catalog -->
-                <section class="section !bg-[var(--third-bg-color)]" data-aos="fade-up">
-                    <div class="container">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-[20px]">
-                            <div class="!min-h-[285px] flex flex-col justify-center gap-[40px]" data-aos="zoom-in">
-                                <h2 class="h2 !text-[var(--blue-color)]">كتالوج</h2>
-
-                                <button 
-                                    type="button" 
-                                    class="btn btn-blue"
-                                >
-                                    عرض الأن
-                                    <span class="arrow-dir">
-                                        <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
-                                    </span>
-                                </button>
-                            </div>
-
-                            <img 
-                                src="https://eg-crete.com/site/images/mockup_cover.jpg"
-                                alt=""
-                                loading="lazy"
-                                class="!max-h-[285px] img-cover"
-                            />
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Production lines -->
-                <section class="section">
-                    <div class="container">
-                        <div class="flex flex-col items-center justify-center gap-[16px] text-center !mb-[35px]" data-aos="zoom-in">
-                            <div class="flex flex-col items-center justify-center gap-[10px] text-center !w-[100%] max-w-[205px]">
-                                <p class="p !text-[var(--orange-color)]">5 خطوط انتاج</p>
-
-                                <div class="!border-y-2 border-solid border-[var(--orange-color)] !w-[100%] !h-[5px]"></div>
-                            </div>
-
-                            <h3 class="h3 !text-[var(--blue-color)]">نتستخدم احدث التكنولوجيا الالمانيه</h3>
-                        </div>
-
-                        <div class="grid grid-cols-1 lg:grid-cols-2 items-start justify-between gap-[40px] !mb-[50px]">
-                            <div class="flex flex-col gap-[20px]" data-aos="fade-up">
-                                <div class="flex flex-col gap-[16px]">
-                                    <h4 class="h4 !text-[var(--blue-color)]">منطقة الإنتاج</h4>
-
-                                    <ul class="flex flex-col gap-[10px]">
-                                        <li class="flex items-center gap-[10px]">
-                                            <div class="!min-w-[16px] !min-h-[16px] !max-w-[16px] !max-h-[16px] !rounded-[4px] border-2 border-solid border-[var(--orange-color)]"></div>
-
-                                            <div class="muted">
-                                                <p class="p">أقصى عرض للإنتاج 1.240 ملم</p>
-                                            </div>
-                                        </li>
-
-                                        <li class="flex items-center gap-[10px]">
-                                            <div class="!min-w-[16px] !min-h-[16px] !max-w-[16px] !max-h-[16px] !rounded-[4px] border-2 border-solid border-[var(--orange-color)]"></div>
-
-                                            <div class="muted">
-                                                <p class="p">أقصى عمق إنتاج - إنتاج طاولة اهتزازية 1000 مم</p>
-                                            </div>
-                                        </li>
-
-                                        <li class="flex items-center gap-[10px]">
-                                            <div class="!min-w-[16px] !min-h-[16px] !max-w-[16px] !max-h-[16px] !rounded-[4px] border-2 border-solid border-[var(--orange-color)]"></div>
-
-                                            <div class="muted">
-                                                <p class="p">أقصى عمق للإنتاج - إنتاج الأرضية 1.240 مم</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="flex flex-col gap-[16px]">
-                                    <h4 class="h4 !text-[var(--blue-color)]">سمات</h4>
-
-                                    <ul class="flex flex-col gap-[10px]">
-                                        <li class="flex items-center gap-[10px]">
-                                            <div class="!min-w-[16px] !min-h-[16px] !max-w-[16px] !max-h-[16px] !rounded-[4px] border-2 border-solid border-[var(--orange-color)]"></div>
-
-                                            <div class="muted">
-                                                <p class="p">حجم قمع الخرسانة الخلفي (تغذية المحمل) 1.200 لتر</p>
-                                            </div>
-                                        </li>
-
-                                        <li class="flex items-center gap-[10px]">
-                                            <div class="!min-w-[16px] !min-h-[16px] !max-w-[16px] !max-h-[16px] !rounded-[4px] border-2 border-solid border-[var(--orange-color)]"></div>
-
-                                            <div class="muted">
-                                                <p class="p">حجم القادوس الخرساني الخلفي (تغذية الناقل) 2000 لتر</p>
-                                            </div>
-                                        </li>
-
-                                        <li class="flex items-center gap-[10px]">
-                                            <div class="!min-w-[16px] !min-h-[16px] !max-w-[16px] !max-h-[16px] !rounded-[4px] border-2 border-solid border-[var(--orange-color)]"></div>
-
-                                            <div class="muted">
-                                                <p class="p">حجم قمع خلط الخرسانة السطحية (تغذية المحمل) 800 لتر</p>
-                                            </div>
-                                        </li>
-
-                                        <li class="flex items-center gap-[10px]">
-                                            <div class="!min-w-[16px] !min-h-[16px] !max-w-[16px] !max-h-[16px] !rounded-[4px] border-2 border-solid border-[var(--orange-color)]"></div>
-
-                                            <div class="muted">
-                                                <p class="p">حجم قمع خلط الخرسانة السطحية (تغذية الناقل) 2000 لتر</p>
-                                            </div>
-                                        </li>
-
-
-                                        <li class="flex items-center gap-[10px]">
-                                            <div class="!min-w-[16px] !min-h-[16px] !max-w-[16px] !max-h-[16px] !rounded-[4px] border-2 border-solid border-[var(--orange-color)]"></div>
-
-                                            <div class="muted">
-                                                <p class="p">ارتفاع تغذية المحمل الأقصى 2.800 مم</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="lg:sticky top-[90px] flex justify-center" data-aos="fade-up">
-                                <img
-                                    src="https://eg-crete.com/storage/199/AyKo87SecBljTWJhye1AnIccIG8RjbZSEd6Ilzf5.png"
-                                    alt=""
-                                    loading="lazy"
-                                    class="!max-w-[max-content] !max-h-[max-content] img-cover"
-                                />
-                            </div>
-                        </div>
-
-                        <div class="grid grid-cols-1 lg:grid-cols-2 items-start justify-between gap-[40px] !mb-[50px]">
-                            <div class="lg:sticky top-[90px] flex justify-center" data-aos="fade-up">
-                                <img
-                                    src="https://eg-crete.com/storage/200/H0Vxk4DQEkZeqnbczA2TmZUJ6BqFwlFeRuxh1UhV.png"
-                                    alt=""
-                                    loading="lazy"
-                                    class="!max-w-[max-content] !max-h-[max-content] img-cover"
-                                />
-                            </div>
-
-                            <ul class="flex flex-col gap-[18px]" data-aos="fade-up">
-                                <li class="flex flex-col lg:flex-row items-start gap-[10px]">
-                                    <p class="p lg:!min-w-[180px]">حجم المنصة</p>
-
-                                    <div class="muted">
-                                        <p class="p">قياسي 1.270 × 1.050 × 125 مم</p>
-                                    </div>
-                                </li>
-                                
-                                <li class="flex flex-col lg:flex-row items-start gap-[10px]">
-                                    <p class="p lg:!min-w-[180px]">منطقة الإنتاج</p>
-                                    
-                                    <div class="muted">
-                                        <p class="p">الحد الأقصى 1.240 × 1.000 مم</p>
-                                    </div>
-                                </li>
-                                
-                                <li class="flex flex-col lg:flex-row items-start gap-[10px]">
-                                    <p class="p lg:!min-w-[180px]">ارتفاع الكتلة</p>
-                                    
-                                    <div class="muted">
-                                        <p class="p">الحد الأقصى 500 مم والحد الأدنى 50 مم</p>
-                                    </div>
-                                </li>
-                                
-                                <li class="flex flex-col lg:flex-row items-start gap-[10px]">
-                                    <p class="p lg:!min-w-[180px]">ارتفاع الكتلة</p>
-                                    
-                                    <div class="muted">
-                                        <p class="p">35 ملم</p>
-                                    </div>
-                                </li>
-                                
-                                <li class="flex flex-col lg:flex-row items-start gap-[10px]">
-                                    <p class="p lg:!min-w-[180px]">ارتفاع المكعب</p>
-                                    
-                                    <div class="muted">
-                                        <p class="p">الحد الأقصى 640 ملم</p>
-                                    </div>
-                                </li>
-                                
-                                <li class="flex flex-col lg:flex-row items-start gap-[10px]">
-                                    <p class="p lg:!min-w-[180px]">قمع الخرسانة الخلفي</p>
-                                    
-                                    <div class="muted">
-                                        <p class="p">	المجلد 2.100 I إذا لم يتم إدراج ارتفاع مكعب الحجر المطلوب أو حجم المنصة أو ارتفاع المنتج، فسنكون سعداء بالتحقق مما إذا كان بإمكاننا التوصل إلى حل خاص يناسب احتياجاتك بشكل أفضل.</p>
-                                    </div>
-                                </li>
-                                
-                                <li class="flex flex-col lg:flex-row items-start gap-[10px]">
-                                    <p class="p lg:!min-w-[180px]">وزن الماكينة</p>
-                                    
-                                    <div class="muted">
-                                        <p class="p">مع وحدة خلط الوجه 16.000 كجم ناقل الأسطوانة والدافع، منصة التشغيل، محطة هيدروليكية، حامل المنصات وما إلى ذلك 9.000 كجم</p>
-                                    </div>
-                                </li>
-                                
-                                <li class="flex flex-col lg:flex-row items-start gap-[10px]">
-                                    <p class="p lg:!min-w-[180px]">أبعاد الماكينة</p>
-                                    
-                                    <div class="muted">
-                                        <p class="p">الحد الأقصى للطول الإجمالي 6.200 مم الحد الأقصى للارتفاع الإجمالي (النقل) 3.000 مم الحد الأقصى للعرض الإجمالي 2.470 مم</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- News -->
-                <section class="section">
-                    <div class="container">
-                        <div class="title-section" data-aos="zoom-in">
-                            <div class="box blue-fixed">
-                                <svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-news"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11" /><path d="M8 8l4 0" /><path d="M8 12l4 0" /><path d="M8 16l4 0" /></svg>
-                            </div>
-
-                            <h4 class="h3">الاخبار</h4>
-                        </div>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] !mb-[35px]">
-                            <div data-aos="fade-up">
-                                <a 
-                                    href="#" 
-                                    class="card-news"
-                                >
-                                    <img
-                                        src="https://eg-crete.com/storage/618/screencapture-tadawulnews-net-archives-7339-2022-10-04-09_51_33.png"
-                                        alt=""
-                                        loading="lazy"
-                                        class="img-card img-cover"
-                                    />
-    
-                                    <div class="content">
-                                        <p class="p line-clamp-2 break-words">“إيجي كريت” تورد 75% من الانترلوك لمنتجات الأسمنت البيئة الصديقة لشرم الشيخ</p>
-                                    </div>
-
-                                    <div class="hover"></div>
-                                </a>
-                            </div>
-                            
-                            <div data-aos="fade-up">
-                                <a 
-                                    href="#" 
-                                    class="card-news"
-                                >
-                                    <img
-                                        src="https://eg-crete.com/storage/618/screencapture-tadawulnews-net-archives-7339-2022-10-04-09_51_33.png"
-                                        alt=""
-                                        loading="lazy"
-                                        class="img-card img-cover"
-                                    />
-    
-                                    <div class="content">
-                                        <p class="p line-clamp-2 break-words">“إيجي كريت” تورد 75% من الانترلوك لمنتجات الأسمنت البيئة الصديقة لشرم الشيخ</p>
-                                    </div>
-
-                                    <div class="hover"></div>
-                                </a>
-                            </div>
-                            
-                            <div data-aos="fade-up">
-                                <a 
-                                    href="#" 
-                                    class="card-news"
-                                >
-                                    <img
-                                        src="https://eg-crete.com/storage/610/screencapture-almotawwer-slider-53321-2022-09-10-14_29_27.webp"
-                                        alt=""
-                                        loading="lazy"
-                                        class="img-card img-cover"
-                                    />
-    
-                                    <div class="content">
-                                        <p class="p line-clamp-2 break-words">“إيجي كريت” تورد 75% من الانترلوك لمنتجات الأسمنت البيئة الصديقة لشرم الشيخ</p>
-                                    </div>
-
-                                    <div class="hover"></div>
-                                </a>
-                            </div>
-                            
-                            <div data-aos="fade-up">
-                                <a 
-                                    href="#" 
-                                    class="card-news"
-                                >
-                                    <img
-                                        src="https://eg-crete.com/storage/616/nnnn.jpeg"
-                                        alt=""
-                                        loading="lazy"
-                                        class="img-card img-cover"
-                                    />
-    
-                                    <div class="content">
-                                        <p class="p line-clamp-2 break-words">“إيجي كريت” تورد 75% من الانترلوك لمنتجات الأسمنت البيئة الصديقة لشرم الشيخ</p>
-                                    </div>
-
-                                    <div class="hover"></div>
-                                </a>
-                            </div>
-                            
-                            <div data-aos="fade-up">
-                                <a 
-                                    href="#" 
-                                    class="card-news"
-                                >
-                                    <img
-                                        src="https://eg-crete.com/storage/599/KTnTIR6CI5tXnFyYReYSABfMzt1NY5EZZ6fw7Wd9.webp"
-                                        alt=""
-                                        loading="lazy"
-                                        class="img-card img-cover"
-                                    />
-    
-                                    <div class="content">
-                                        <p class="p line-clamp-2 break-words">“إيجي كريت” تورد 75% من الانترلوك لمنتجات الأسمنت البيئة الصديقة لشرم الشيخ</p>
-                                    </div>
-
-                                    <div class="hover"></div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="mx-auto max-w-[max-content]" data-aos="fade-up">
-                            <a 
-                                href="%" 
-                                class="btn btn-blue"
-                            >
-                                تحميل المزيد
-                                <span class="arrow-dir">
-                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Word -->
-                <section class="section !bg-[url(./src/assets/images/bg-back.png)] !bg-cover !bg-center">
-                    <div class="container">
-                        <div class="flex flex-col lg:flex-row items-end justify-start gap-[20px] lg:gap-0">
-                            <img
-                                src="https://images.lifestyleasia.com/wp-content/uploads/2019/10/18094733/1128_01_2610.jpg?tr=w-1600"
-                                alt=""
-                                loading="lazy"
-                                class="relative z-[1] lg:max-w-[400px] lg:h-[550px] ltr:lg:ml-[120px] rtl:lg:mr-[120px] !rounded-[8px] img-cover"
-                                data-aos="fade-up"
-                            />
-
-                            <div class="relative z-[2] !py-[30px] !px-[20px] lg:!px-[50px] !rounded-[12px] !bg-[var(--bg-color)] flex flex-col gap-[35px] ltr:lg:ml-[-80px] rtl:lg:mr-[-80px]" data-aos="zoom-in">
-                                <div class="flex items-center gap-[30px]">
-                                    <div class="flex items-center gap-[10px]">
-                                        <p class="p !text-[var(--orange-color)]" style="writing-mode: vertical-lr;">رئيس مجلس الاداره</p>
-    
-                                        <div class="!w-[5px] !h-[124px] border-x-2 border-solid border-[var(--orange-color)]"></div>
-                                    </div>
-
-                                    <h2 class="h2 !text-[var(--blue-color)]">كلمة رئيس مجلس الإدارة</h2>
-                                </div>
-
-                                <div class="muted">
-                                    <p class="p">
-                                        خلال الآونة الأخيرة، عصفت بوطننا الحلو، لكنت التي كاد ان تطفئ شمس المنزل إلا انه من وسط شبح ظهر النور.. ومن وسط الخراب يبدأ تعمير. خلال تلك الفترة الأخيرة، تم تحديد ترابط ما بين ما لا نهاية لخمسة آلاف من الأشخاص الذين كانوا منفصلين في يومنا، إلا سمي في وقت محدد ومحدود ترابطوا وشكلوا صد السطح منيع أمام.. وقدرتها على مرونته، إذا تضرر أحده ولم يتم استبداله آخر. <br /><br />
-
-                                        من هذا المشهد العظيم للنسيج الوطني المترابط، نَبعت فكرة شركة إيجي-كريت لصناعة المُنتجات الأسمنتية وعلى رأسها إنشاء الإنترلوك والبردورات والطوب الأسمنتي، والذين يعتمدون بشكل أساسي على ترابط ألف ألف وحدة من الأشياء الكبيرة، بقوة مارونتها، إذا تضرر أحد وحداتها سهُل استبداله بآخر.
-                                    </p>
-                                </div>
-
-                                <div class="flex justify-end">
-                                    <p class="p !text-[var(--blue-color)]">م/ محمد مفيد</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Our products -->
-                <section class="section !bg-[var(--second-bg-color)]" data-swiper>
-                    <div class="container">
-                        <!-- title section -->
-                        <div class="title-section" data-aos="zoom-in">
-                            <div class="box blue-fixed">
-                                <svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-library-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 3m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" /><path d="M4.012 7.26a2.005 2.005 0 0 0 -1.012 1.737v10c0 1.1 .9 2 2 2h10c.75 0 1.158 -.385 1.5 -1" /><path d="M17 7h.01" /><path d="M7 13l3.644 -3.644a1.21 1.21 0 0 1 1.712 0l3.644 3.644" /><path d="M15 12l1.644 -1.644a1.21 1.21 0 0 1 1.712 0l2.644 2.644" /></svg>
-                            </div>
-
-                            <h4 class="h3">معرض الصور</h4>
-                        </div>
-
-                        <ul class="flex flex-nowrap items-center gap-[16px] overflow-x-auto scrollbar-none text-nowrap" style="direction: ltr;" data-swiper-cards data-aos="fade-up">
-                            <li class="flex-none basis-[100%] sm:basis-1/2 md:basis-1/3">
-                                <button
-                                    type="button"
-                                    class="card-photo"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#photos_index"
-                                >
-                                    <img 
-                                        src="https://eg-crete.com/storage/648/1678796305321WhatsApp-Image-2023-03-14-at-2.01.29-PM-(2).jpeg"
-                                        alt=""
-                                        loading="lazy"
-                                        class="img-card img-cover"
-                                    />
-
-                                    <div class="hover">
-                                        <div class="box blue !min-w-[50px] !max-w-[50px] !min-h-[50px] !max-h-[50px]">
-                                            <svg  xmlns="http://www.w3.org/2000/svg"  width="28"  height="28"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
-                                        </div>
-                                    </div>
-                                </button>
-                            </li>
-
-                            <li class="flex-none basis-[100%] sm:basis-1/2 md:basis-1/3">
-                                <button
-                                    type="button"
-                                    class="card-photo"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#photos_index"
-                                >
-                                    <img 
-                                        src="https://eg-crete.com/storage/649/1678796310119WhatsApp-Image-2023-03-14-at-2.01.28-PM.jpeg"
-                                        alt=""
-                                        loading="lazy"
-                                        class="img-card img-cover"
-                                    />
-
-                                    <div class="hover">
-                                        <div class="box blue !min-w-[50px] !max-w-[50px] !min-h-[50px] !max-h-[50px]">
-                                            <svg  xmlns="http://www.w3.org/2000/svg"  width="28"  height="28"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
-                                        </div>
-                                    </div>
-                                </button>
-                            </li>
-
-                            <li class="flex-none basis-[100%] sm:basis-1/2 md:basis-1/3">
-                                <button
-                                    type="button"
-                                    class="card-photo"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#photos_index"
-                                >
-                                    <img 
-                                        src="https://eg-crete.com/storage/647/1678796302288WhatsApp-Image-2023-03-14-at-2.01.29-PM-(1).jpeg"
-                                        alt=""
-                                        loading="lazy"
-                                        class="img-card img-cover"
-                                    />
-
-                                    <div class="hover">
-                                        <div class="box blue !min-w-[50px] !max-w-[50px] !min-h-[50px] !max-h-[50px]">
-                                            <svg  xmlns="http://www.w3.org/2000/svg"  width="28"  height="28"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
-                                        </div>
-                                    </div>
-                                </button>
-                            </li>
-
-                            <li class="flex-none basis-[100%] sm:basis-1/2 md:basis-1/3">
-                                <button
-                                    type="button"
-                                    class="card-photo"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#photos_index"
-                                >
-                                    <img 
-                                        src="https://eg-crete.com/storage/646/1678796298191WhatsApp-Image-2023-03-14-at-2.01.29-PM.jpeg"
-                                        alt=""
-                                        loading="lazy"
-                                        class="img-card img-cover"
-                                    />
-
-                                    <div class="hover">
-                                        <div class="box blue !min-w-[50px] !max-w-[50px] !min-h-[50px] !max-h-[50px]">
-                                            <svg  xmlns="http://www.w3.org/2000/svg"  width="28"  height="28"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
-                                        </div>
-                                    </div>
-                                </button>
-                            </li>
-                        </ul>
-
-                        <div class="flex items-center justify-center gap-[8px] !mt-[35px]" style="direction: ltr;" data-aos="fade-up">
-                            <button
-                                type="button"
-                                class="box blue"
-                                data-left-scroll
-                            >
-                                <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
-                            </button>
-
-                            <button
-                                type="button"
-                                class="box blue"
-                                data-right-scroll
-                            >
-                                <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- modal all imgs -->
-                    <div class="modal fade" id="photos_index">
-                        <div class="modal-dialog modal-dialog-centered modal-xl">
-                            <div class="modal-content !overflow-visible !bg-[transparent] !border-0 !max-h-[80dvh]">
-                                <button
-                                    type="button"
-                                    class="box orange absolute top-[-52px] right-0 z-[1000]"
-                                    data-bs-dismiss="modal"
-                                >
-                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
-                                </button>
-
-                                <div id="photos_slide_index" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img
-                                                src="https://eg-crete.com/storage/650/1678796313365WhatsApp-Image-2023-03-14-at-2.03.17-PM.jpeg"
-                                                alt=""
-                                                loading="lazy"
-                                                class="!max-h-[80dvh] !rounded-[12px] img-cover"
-                                            />
-                                        </div>
-                                        
-                                        <div class="carousel-item">
-                                            <img
-                                                src="https://eg-crete.com/storage/649/1678796310119WhatsApp-Image-2023-03-14-at-2.01.28-PM.jpeg"
-                                                alt=""
-                                                loading="lazy"
-                                                class="!max-h-[80dvh] !rounded-[12px] img-cover"
-                                            />
-                                        </div>
-                                        
-                                        <div class="carousel-item">
-                                            <img
-                                                src="https://eg-crete.com/storage/648/1678796305321WhatsApp-Image-2023-03-14-at-2.01.29-PM-(2).jpeg"
-                                                alt=""
-                                                loading="lazy"
-                                                class="!max-h-[80dvh] !rounded-[12px] img-cover"
-                                            />
-                                        </div>
-                                        
-                                        <div class="carousel-item">
-                                            <img
-                                                src="https://eg-crete.com/storage/646/1678796298191WhatsApp-Image-2023-03-14-at-2.01.29-PM.jpeg"
-                                                alt=""
-                                                loading="lazy"
-                                                class="!max-h-[80dvh] !rounded-[12px] img-cover"
-                                            />
-                                        </div>
-                                    </div>
-
-                                    <button class="carousel-control-prev !opacity-[1] !px-[25px] !rounded-l-[12px] !max-w-[max-content] !bg-[rgba(0,0,0,0.3)]" type="button" data-bs-target="#photos_slide_index" data-bs-slide="prev">
-                                        <div class="box blue">
-                                            <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
-                                        </div>
-                                    </button>
-
-                                    <button class="carousel-control-next !opacity-[1] !px-[25px] !rounded-r-[12px] !max-w-[max-content] !bg-[rgba(0,0,0,0.3)]" type="button" data-bs-target="#photos_slide_index" data-bs-slide="next">
-                                        <div class="box blue">
-                                            <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </section>

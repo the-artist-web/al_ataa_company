@@ -82,7 +82,7 @@ textarea {
     width: 100%;
 }
 
-textarea { resize: none; }
+textarea { resize: none !important; }
 
 input::placeholder { color: var(--second-color) !important; }
 

@@ -36,6 +36,11 @@
 
 .form-box .form-control:where(:hover, :focus-visible) { background-color: var(--border-color) !important; }
 
+.form-box .form-control.textarea {
+  min-height: 180px;
+  max-height: 180px;
+}
+
 .form-box .messages {
   color: red;
   font-size: 14px !important;
